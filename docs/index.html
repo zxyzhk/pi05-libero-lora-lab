@@ -24,7 +24,6 @@
       <p class="eyebrow"><span aria-hidden="true"></span> VISION · LANGUAGE · ACTION</p>
       <h1 id="project-title">π₀.₅：<span>语言驱动的多任务操作</span></h1>
       <p class="hero-description">9,000 次 LoRA 后训练更新，在 LIBERO 的 <strong>40 个任务、400 个回合</strong>中<br class="desktop-break">取得 <strong id="lead-success">92.75%</strong> 成功率；空间与物体套件均为 <strong>98%</strong>。</p>
-      <p class="author-line">厦门大学 · 硕士一年级 <span aria-hidden="true">/</span> 具身智能算法项目</p>
       <div class="hero-links">
         <a class="button primary" href="https://github.com/zxyzhk/pi05-libero-lora-lab" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>开源代码</a>
         <a class="button secondary" href="https://github.com/zxyzhk/pi05-libero-lora-lab/blob/main/EXPERIMENT_REPORT.md" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12V7l-4-4Zm0 0v5h5M9 12h6m-6 4h6"/></svg>实验报告</a>
@@ -66,7 +65,7 @@
     </section>
 
     <section class="container section contributions" id="contributions" aria-labelledby="contributions-title">
-      <div class="section-heading"><p class="eyebrow">TECHNICAL CONTRIBUTIONS</p><h2 id="contributions-title">把开源策略，接成可验证的闭环。</h2><p>从运行时适配、LoRA 后训练到机器人仿真，完成可恢复、可追溯的实验链路。</p></div>
+      <div class="section-heading"><p class="eyebrow">TECHNICAL CONTRIBUTIONS</p><h2 id="contributions-title">可验证的策略验证</h2><p>从运行时适配、LoRA 后训练到机器人仿真，完成可恢复、可追溯的实验链路。</p></div>
       <div class="contribution-grid">
         <article class="contribution"><span class="contribution-number">01</span><p class="problem">运行时适配</p><h3>在 Blackwell 上打通 BF16 训练</h3><p>适配 JAX / CUDA 运行环境，完成完整模型前反向、优化器更新及检查点读写验收，验证原生 batch 64 的单卡训练。</p><div class="contribution-result"><strong>1 × 96 GB</strong><span>Blackwell · BF16</span></div></article>
         <article class="contribution"><span class="contribution-number">02</span><p class="problem">策略后训练与状态恢复</p><h3>双分支 LoRA，完成 9,000 次更新</h3><p>集成完整 LIBERO 数据及归一化、视觉语言骨干 rank 16 / 动作专家 rank 32。恢复模型、Adam 与学习率状态，核对最终更新计数。</p><div class="contribution-result"><strong>9,000</strong><span>step / Adam / LR 一致</span></div></article>
