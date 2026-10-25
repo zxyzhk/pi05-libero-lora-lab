@@ -1,0 +1,43 @@
+# Python / local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+envs/
+.DS_Store
+
+# Local credentials and machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.ssh/
+
+# Training payloads and raw operations evidence
+/checkpoints/
+/weights/
+/datasets/
+/data/
+/cache/
+/logs/
+/evidence/
+/private/
+*.log
+*.parquet
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Local build/dependency products; docs/ is the published static site
+node_modules/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+/dist/
+/build/
+

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="π0.5语言驱动的多任务机器人操作：单卡Blackwell完成9000次LoRA后训练更新，40任务400回合实测92.75%成功率，包含真实仿真视频、训练曲线与完整评测。">
+  <meta property="og:title" content="π₀.₅｜语言驱动的多任务操作">
+  <meta property="og:description" content="92.75%成功率 · 40任务 · 400回合真实仿真 · 双分支LoRA后训练">
+  <meta property="og:type" content="website">
+  <title>π₀.₅｜语言驱动的多任务操作</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header"><div class="container nav-row">
+    <a class="brand" href="#main"><span class="brand-symbol" aria-hidden="true">π</span>π₀.₅<span class="brand-separator">/</span>Robot Learning</a>
+    <nav aria-label="项目导航"><a href="#demo">仿真演示</a><a href="#results">实验结果</a><a href="#contributions">技术贡献</a></nav>
+    <a class="nav-code" href="https://github.com/zxyzhk/pi05-libero-lora-lab" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </div></header>
+  <main id="main">
+    <section class="container hero" aria-labelledby="project-title">
+      <p class="eyebrow"><span aria-hidden="true"></span> VISION · LANGUAGE · ACTION</p>
+      <h1 id="project-title">π₀.₅：<span>语言驱动的多任务操作</span></h1>
+      <p class="hero-description">9,000 次 LoRA 后训练更新，在 LIBERO 的 <strong>40 个任务、400 个回合</strong>中<br class="desktop-break">取得 <strong id="lead-success">92.75%</strong> 成功率；空间与物体套件均为 <strong>98%</strong>。</p>
+      <p class="author-line">厦门大学 · 硕士一年级 <span aria-hidden="true">/</span> 具身智能算法项目</p>
+      <div class="hero-links">
+        <a class="button primary" href="https://github.com/zxyzhk/pi05-libero-lora-lab" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>开源代码</a>
+        <a class="button secondary" href="https://github.com/zxyzhk/pi05-libero-lora-lab/blob/main/EXPERIMENT_REPORT.md" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12V7l-4-4Zm0 0v5h5M9 12h6m-6 4h6"/></svg>实验报告</a>
+        <a class="button text-button" href="technical.html">完整评测 ↗</a>
+      </div>
+      <div class="teaser" id="demo">
+        <div class="teaser-heading"><div><span class="mini-label">ONE POLICY. MULTIPLE TASKS.</span><h2>从一句指令，到连续的动作。</h2></div><button id="replay-hero" type="button" class="replay-button"><span aria-hidden="true">↻</span>重播演示</button></div>
+        <div class="hero-videos" id="hero-videos" aria-label="两个长程任务的真实成功回合"></div>
+        <p class="video-note">本轮评测的真实成功回合节选，10 fps 回放。</p>
+      </div>
+      <div class="headline-metrics" aria-label="核心成果">
+        <div><span class="metric-label">400 回合总体成功率</span><p><strong id="headline-success">92.75%</strong><span id="headline-count">371 / 400 次成功</span></p></div>
+        <div><span class="metric-label">跨套件任务覆盖</span><p><strong>40 <small>tasks</small></strong><span>4 套件 · 每任务 10 回合</span></p></div>
+        <div><span class="metric-label">可追溯闭环评测</span><p><strong>400 <small>videos</small></strong><span>逐回合结果与真实仿真录像</span></p></div>
+      </div>
+      <p class="scope-line">单张 RTX PRO 6000 Blackwell 96 GB · 原生 batch 64 · 9,000 次更新 · 本次评测程序错误 0</p>
+      <p id="data-message" class="data-message" role="status" hidden></p>
+    </section>
+
+    <section class="result-section" id="results" aria-labelledby="results-title">
+      <div class="container results-layout">
+        <div class="result-story"><p class="eyebrow">RESULTS ACROSS FOUR SUITES</p><h2 id="results-title">从空间关系，<br>到物体与目标操作。</h2><p>同一检查点覆盖四类操作场景。空间、物体套件各完成 98/100 回合，目标套件完成 94/100；所有任务的成功与失败共同计入总体成绩。</p><div class="result-facts"><span><b>24</b> 个任务 10/10</span><span><b>38</b> 个任务至少 8/10</span></div><a class="text-link" href="technical.html#tasks">查看逐任务结果与置信区间 ↗</a></div>
+        <div class="result-chart" aria-label="四套件成功率">
+          <div class="chart-heading"><span>闭环任务成功率 <small>每套件 n = 100</small></span><span class="chart-unit">0–100%</span></div>
+          <div id="suite-bars"></div>
+          <div class="chart-outcome"><div><span>全部 40 个任务</span><p><b id="overall-score">371 / 400</b><span class="outline-badge">同一检查点</span></p></div><div class="ci-stat"><span>Wilson 95%</span><b id="overall-ci">89.78%–94.90%</b></div></div>
+          <p class="chart-note">固定任务与初始状态下的观察区间；单次训练 seed，不表示跨训练随机性的置信范围。</p>
+          <a class="chart-download" href="assets/charts/suite-success.svg" download>下载图表 SVG ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section analysis" id="analysis" aria-labelledby="analysis-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow">TRAINING & TASK COVERAGE</p><h2 id="analysis-title">训练有轨迹，结果有明细。</h2></div><a class="text-link" href="technical.html#timing">完整指标与实验协议 ↗</a></div>
+      <div class="analysis-grid">
+        <div class="analysis-card loss-card"><div class="card-heading"><div><h3>真实训练曲线</h3><p><b>0.0939 → 0.0175</b> 训练 loss</p></div><a href="assets/charts/training-loss.svg" download aria-label="下载训练损失SVG">SVG ↓</a></div><div class="chart-toolbar"><div class="segmented" role="group" aria-label="训练指标"><button type="button" data-metric="loss" class="selected" aria-pressed="true">Loss</button><button type="button" data-metric="grad_norm" aria-pressed="false">梯度范数</button></div><label class="smooth-switch"><input id="smooth" type="checkbox" checked>5 点平滑</label></div><div class="line-legend"><span><i class="raw-key"></i>原始日志</span><span><i class="smooth-key"></i>移动平均</span></div><div id="chart-wrap" class="chart-wrap"><svg id="training-chart" role="img" aria-labelledby="curve-title curve-desc" viewBox="0 0 620 300"><title id="curve-title">训练损失曲线</title><desc id="curve-desc">90 个真实日志点，2,501 次更新后恢复训练。</desc></svg><div id="chart-tooltip" class="chart-tooltip" hidden></div></div><p class="chart-note">90 个真实采样点 · 最后日志位于第 8,901 次更新；虚线标记 2,501 次更新后的恢复点。训练 loss 不等同于任务成功率。</p></div>
+        <div class="analysis-card coverage-card"><div class="card-heading"><div><h3>40 任务覆盖</h3><p>每格为 <b>成功次数 / 10</b></p></div><a href="assets/charts/task-heatmap.svg" download aria-label="下载任务热力图SVG">SVG ↓</a></div><div id="task-heatmap" class="task-heatmap" aria-label="四套件任务热力图"></div><div class="heatmap-legend"><span>成功数</span><i class="legend-light"></i><span>0</span><span class="legend-gradient"></span><span>10</span></div><div class="heatmap-info" id="heatmap-info" aria-live="polite"><b>24 / 40 个任务取得 10/10</b><p>悬停或键盘聚焦查看任务，点击进入对应套件的完整明细。</p></div><p class="chart-note">完整 4 × 10 任务矩阵，展示全部任务的实际成功次数。</p></div>
+      </div>
+    </section>
+
+    <section class="container section contributions" id="contributions" aria-labelledby="contributions-title">
+      <div class="section-heading"><p class="eyebrow">TECHNICAL CONTRIBUTIONS</p><h2 id="contributions-title">把开源策略，接成可验证的闭环。</h2><p>从运行时适配、LoRA 后训练到机器人仿真，完成可恢复、可追溯的实验链路。</p></div>
+      <div class="contribution-grid">
+        <article class="contribution"><span class="contribution-number">01</span><p class="problem">运行时适配</p><h3>在 Blackwell 上打通 BF16 训练</h3><p>适配 JAX / CUDA 运行环境，完成完整模型前反向、优化器更新及检查点读写验收，验证原生 batch 64 的单卡训练。</p><div class="contribution-result"><strong>1 × 96 GB</strong><span>Blackwell · BF16</span></div></article>
+        <article class="contribution"><span class="contribution-number">02</span><p class="problem">策略后训练与状态恢复</p><h3>双分支 LoRA，完成 9,000 次更新</h3><p>集成完整 LIBERO 数据及归一化、视觉语言骨干 rank 16 / 动作专家 rank 32。恢复模型、Adam 与学习率状态，核对最终更新计数。</p><div class="contribution-result"><strong>9,000</strong><span>step / Adam / LR 一致</span></div></article>
+        <article class="contribution"><span class="contribution-number">03</span><p class="problem">闭环评测与结果追溯</p><h3>每个任务、每个回合，都可追溯</h3><p>覆盖 40 个任务的 400 个闭环回合，保存唯一回合记录与视频；核对任务覆盖、结果汇总、环境关闭和展示资产的一致性。</p><div class="contribution-result"><strong>400</strong><span>回合结果与视频可追溯</span></div></article>
+      </div>
+      <div class="architecture" role="group" aria-label="策略与闭环流程示意"><div class="architecture-node"><span>01 / OBSERVATION</span><b>双相机 + 状态 + 语言</b><small>场景观测与任务指令</small></div><div class="architecture-node"><span>02 / VISION–LANGUAGE</span><b>视觉语言骨干</b><small>LoRA rank 16</small></div><div class="architecture-node"><span>03 / ACTION EXPERT</span><b>动作专家 · Flow Matching</b><small>LoRA rank 32 · 10 步积分</small></div><div class="architecture-node"><span>04 / CLOSED LOOP</span><b>10 × 7 动作块</b><small>执行 5 步后重新规划</small></div></div>
+      <p class="architecture-caption">基于官方 π₀.₅ 与社区 LoRA 配方集成的策略与闭环流程。</p>
+      <div class="stack-line"><span>TECH STACK</span><ul aria-label="项目技术栈"><li>JAX / Flax</li><li>LoRA</li><li>Flow Matching</li><li>Optax / Orbax</li><li>LeRobot</li><li>LIBERO</li><li>MuJoCo</li></ul></div>
+    </section>
+
+    <section class="container section demos" aria-labelledby="demos-title">
+      <div class="section-heading compact-heading"><div><p class="eyebrow">POLICY IN ACTION</p><h2 id="demos-title">一句指令，不同操作场景。</h2></div><a class="text-link" href="technical.html#gallery">全部 400 回合，含失败案例 ↗</a></div>
+      <div class="demo-grid" id="showcase-gallery"></div>
+      <p class="gallery-note">以上为本轮评测的精选成功回合。总体成绩统计全部 400 回合，完整录像与逐回合记录可在技术页查看。</p>
+    </section>
+
+    <section class="container evidence-section" aria-label="技术材料与实验范围">
+      <div class="evidence-links"><a href="https://github.com/zxyzhk/pi05-libero-lora-lab" target="_blank" rel="noopener noreferrer">代码仓库 ↗</a><a href="https://github.com/zxyzhk/pi05-libero-lora-lab/blob/main/EXPERIMENT_REPORT.md" target="_blank" rel="noopener noreferrer">实验报告 ↗</a><a href="technical.html">逐任务结果与完整数据 ↗</a></div>
+      <p class="scope-bottom">长程能力仍有提升空间；当前为单训练种子的 400 回合阶段评测。</p>
+      <details class="protocol-details"><summary>评测口径与项目范围</summary><div><p>基于官方 π₀.₅、社区 LoRA 配方和 LIBERO。单卡原生 batch 64、训练 seed 42，完成 9,000 次更新；同一检查点评测 4 × 10 × 10 = 400 回合。环境 seed 7，每套件策略 seed 0；Flow Matching 积分 10 步、动作块 10 步、执行 5 步后重规划。</p><p>当前为 400 回合阶段实验，原定 30,000 次更新 / 2,000 回合协议尚未完成；未做模型间受控对照、真机或 OOD 评测。该 LoRA 配方还训练视觉编码器与部分投影。完整协议、恢复边界与来源见技术材料。</p></div></details>
+    </section>
+  </main>
+  <footer class="container footer"><span>π₀.₅ · Language-Conditioned Robot Manipulation</span><span>开源模型适配 · LoRA 后训练 · 仿真评测 · 2026</span><a href="https://github.com/zxyzhk/pi05-libero-lora-lab/blob/main/ACKNOWLEDGEMENTS.md" target="_blank" rel="noopener noreferrer">模型与基准来源 ↗</a></footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "codec_fourcc": "avc1",
+  "container_duration_seconds": 23.7,
+  "decoded_frame_count": 237,
+  "decoded_sizes": [
+    "224x224"
+  ],
+  "encoded_height": 224,
+  "encoded_width": 224,
+  "export_decode_completed": true,
+  "extracted_frames": [
+    {
+      "frame_index": 0,
+      "height": 224,
+      "label": "first",
+      "timestamp_seconds": 0,
+      "width": 224,
+      "src": "posters/libero_10-task04-trial00/first.png"
+    },
+    {
+      "frame_index": 118,
+      "height": 224,
+      "label": "middle",
+      "timestamp_seconds": 11.8,
+      "width": 224,
+      "src": "posters/libero_10-task04-trial00/middle.png",
+      "poster_src": "posters/libero_10-task04-trial00/poster.jpg"
+    },
+    {
+      "frame_index": 236,
+      "height": 224,
+      "label": "last",
+      "timestamp_seconds": 23.6,
+      "width": 224,
+      "src": "posters/libero_10-task04-trial00/last.png"
+    }
+  ],
+  "first_timestamp_seconds": 0,
+  "full_decode_completed": true,
+  "inspection_backend": "macOS AVFoundation / AVAssetReader",
+  "last_timestamp_seconds": 23.6,
+  "max_frame_interval_seconds": 0.10000000000000142,
+  "min_frame_interval_seconds": 0.09999999999999787,
+  "nominal_fps": 10,
+  "scope": "Local file decoding and extraction only; no generated scene, interpolation, overlay, or video re-encoding.",
+  "source": "videos/libero_10/task04_trial00.mp4",
+  "source_frames_modified": false,
+  "status": "passed"
+}

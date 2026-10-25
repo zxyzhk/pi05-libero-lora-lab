@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="title desc"><title id="title">Stage evaluation success by suite</title><desc id="desc">Four suites, 100 episodes each. Whiskers are Wilson 95 percent intervals conditional on this fixed evaluation protocol.</desc><rect width="100%" height="100%" fill="white"/><style>text{font-family:Arial,Helvetica,sans-serif;fill:#17324d;font-size:14px}.muted{fill:#64748b;font-size:12px}.title{font-size:22px;font-weight:700}.value{font-size:20px;font-weight:700}</style>
+<text x="32" y="38" class="title" text-anchor="start" >400 episodes, four suites</text>
+<text x="32" y="62" class="muted" text-anchor="start" >9000 training updates  |  10 tasks x 10 trials per suite  |  Wilson 95% intervals</text>
+<line x1="88" y1="310.0" x2="910" y2="310.0" stroke="#e2e8f0" />
+<text x="76" y="315.0" class="muted" text-anchor="end" >0%</text>
+<line x1="88" y1="258.75" x2="910" y2="258.75" stroke="#e2e8f0" />
+<text x="76" y="263.75" class="muted" text-anchor="end" >25%</text>
+<line x1="88" y1="207.5" x2="910" y2="207.5" stroke="#e2e8f0" />
+<text x="76" y="212.5" class="muted" text-anchor="end" >50%</text>
+<line x1="88" y1="156.25" x2="910" y2="156.25" stroke="#e2e8f0" />
+<text x="76" y="161.25" class="muted" text-anchor="end" >75%</text>
+<line x1="88" y1="105.0" x2="910" y2="105.0" stroke="#e2e8f0" />
+<text x="76" y="110.0" class="muted" text-anchor="end" >100%</text>
+<rect x="145" y="109.1" width="96" height="200.9" rx="6" fill="#2563eb"/>
+<line x1="193" y1="119.35241709935153" x2="193" y2="106.1279033477833" stroke="#17324d" stroke-width="2"/>
+<line x1="185" y1="119.35241709935153" x2="201" y2="119.35241709935153" stroke="#17324d" stroke-width="2"/>
+<line x1="185" y1="106.1279033477833" x2="201" y2="106.1279033477833" stroke="#17324d" stroke-width="2"/>
+<text x="193" y="89.1" class="value" text-anchor="middle" >98 / 100</text>
+<text x="193" y="338" class="" text-anchor="middle" >Spatial</text>
+<text x="193" y="359" class="muted" text-anchor="middle" >libero_spatial</text>
+<rect x="350" y="109.1" width="96" height="200.9" rx="6" fill="#2563eb"/>
+<line x1="398" y1="119.35241709935153" x2="398" y2="106.1279033477833" stroke="#17324d" stroke-width="2"/>
+<line x1="390" y1="119.35241709935153" x2="406" y2="119.35241709935153" stroke="#17324d" stroke-width="2"/>
+<line x1="390" y1="106.1279033477833" x2="406" y2="106.1279033477833" stroke="#17324d" stroke-width="2"/>
+<text x="398" y="89.1" class="value" text-anchor="middle" >98 / 100</text>
+<text x="398" y="338" class="" text-anchor="middle" >Object</text>
+<text x="398" y="359" class="muted" text-anchor="middle" >libero_object</text>
+<rect x="555" y="117.30000000000001" width="96" height="192.7" rx="6" fill="#2563eb"/>
+<line x1="603" y1="130.5774716640867" x2="603" y2="110.69615541245358" stroke="#17324d" stroke-width="2"/>
+<line x1="595" y1="130.5774716640867" x2="611" y2="130.5774716640867" stroke="#17324d" stroke-width="2"/>
+<line x1="595" y1="110.69615541245358" x2="611" y2="110.69615541245358" stroke="#17324d" stroke-width="2"/>
+<text x="603" y="97.30000000000001" class="value" text-anchor="middle" >94 / 100</text>
+<text x="603" y="338" class="" text-anchor="middle" >Goal</text>
+<text x="603" y="359" class="muted" text-anchor="middle" >libero_goal</text>
+<rect x="760" y="143.95" width="96" height="166.05" rx="6" fill="#2563eb"/>
+<line x1="808" y1="161.94663302708196" x2="808" y2="130.65524059502593" stroke="#17324d" stroke-width="2"/>
+<line x1="800" y1="161.94663302708196" x2="816" y2="161.94663302708196" stroke="#17324d" stroke-width="2"/>
+<line x1="800" y1="130.65524059502593" x2="816" y2="130.65524059502593" stroke="#17324d" stroke-width="2"/>
+<text x="808" y="123.94999999999999" class="value" text-anchor="middle" >81 / 100</text>
+<text x="808" y="338" class="" text-anchor="middle" >Long horizon</text>
+<text x="808" y="359" class="muted" text-anchor="middle" >libero_10</text>
+<text x="32" y="400" class="muted" text-anchor="start" >Overall: 371 / 400 = 92.75%. All 29 failed episodes remain in the complete video gallery.</text>
+<text x="32" y="422" class="muted" text-anchor="start" >Intervals describe trial uncertainty in this fixed setup; they do not measure new-task or multi-seed generalization.</text>
+</svg>

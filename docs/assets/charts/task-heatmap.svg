@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="450" viewBox="0 0 1050 450" role="img" aria-labelledby="title desc"><title id="title">Success rate for every task</title><desc id="desc">Forty tasks with ten trials each. All successes and failures are included.</desc><rect width="100%" height="100%" fill="white"/><style>text{font-family:Arial,Helvetica,sans-serif;fill:#17324d;font-size:14px}.muted{fill:#64748b;font-size:12px}.title{font-size:22px;font-weight:700}.value{font-size:20px;font-weight:700}</style>
+<text x="32" y="38" class="title" text-anchor="start" >Every task, every outcome</text>
+<text x="32" y="62" class="muted" text-anchor="start" >40 tasks x 10 trials  |  cell value = successful trials / 10</text>
+<text x="237.5" y="100" class="muted" text-anchor="middle" >Task 0</text>
+<text x="312.5" y="100" class="muted" text-anchor="middle" >Task 1</text>
+<text x="387.5" y="100" class="muted" text-anchor="middle" >Task 2</text>
+<text x="462.5" y="100" class="muted" text-anchor="middle" >Task 3</text>
+<text x="537.5" y="100" class="muted" text-anchor="middle" >Task 4</text>
+<text x="612.5" y="100" class="muted" text-anchor="middle" >Task 5</text>
+<text x="687.5" y="100" class="muted" text-anchor="middle" >Task 6</text>
+<text x="762.5" y="100" class="muted" text-anchor="middle" >Task 7</text>
+<text x="837.5" y="100" class="muted" text-anchor="middle" >Task 8</text>
+<text x="912.5" y="100" class="muted" text-anchor="middle" >Task 9</text>
+<text x="180" y="147" class="" text-anchor="end" >Spatial</text>
+<rect x="202" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl between the plate and the ramekin and place it on the plate: 10/10</title></rect>
+<text x="237.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="277" y="114" width="71" height="52" rx="5" fill="#3972ed"><title>pick up the black bowl next to the ramekin and place it on the plate: 9/10</title></rect>
+<text x="312.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="352" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl from table center and place it on the plate: 10/10</title></rect>
+<text x="387.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="427" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl on the cookie box and place it on the plate: 10/10</title></rect>
+<text x="462.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="502" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate: 10/10</title></rect>
+<text x="537.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="577" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl on the ramekin and place it on the plate: 10/10</title></rect>
+<text x="612.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="652" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl next to the cookie box and place it on the plate: 10/10</title></rect>
+<text x="687.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="727" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl on the stove and place it on the plate: 10/10</title></rect>
+<text x="762.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="802" y="114" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the black bowl next to the plate and place it on the plate: 10/10</title></rect>
+<text x="837.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="877" y="114" width="71" height="52" rx="5" fill="#3972ed"><title>pick up the black bowl on the wooden cabinet and place it on the plate: 9/10</title></rect>
+<text x="912.5" y="147" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<text x="180" y="203" class="" text-anchor="end" >Object</text>
+<rect x="202" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the alphabet soup and place it in the basket: 10/10</title></rect>
+<text x="237.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="277" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the cream cheese and place it in the basket: 10/10</title></rect>
+<text x="312.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="352" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the salad dressing and place it in the basket: 10/10</title></rect>
+<text x="387.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="427" y="170" width="71" height="52" rx="5" fill="#3972ed"><title>pick up the bbq sauce and place it in the basket: 9/10</title></rect>
+<text x="462.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="502" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the ketchup and place it in the basket: 10/10</title></rect>
+<text x="537.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="577" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the tomato sauce and place it in the basket: 10/10</title></rect>
+<text x="612.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="652" y="170" width="71" height="52" rx="5" fill="#3972ed"><title>pick up the butter and place it in the basket: 9/10</title></rect>
+<text x="687.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="727" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the milk and place it in the basket: 10/10</title></rect>
+<text x="762.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="802" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the chocolate pudding and place it in the basket: 10/10</title></rect>
+<text x="837.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="877" y="170" width="71" height="52" rx="5" fill="#2563eb"><title>pick up the orange juice and place it in the basket: 10/10</title></rect>
+<text x="912.5" y="203" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<text x="180" y="259" class="" text-anchor="end" >Goal</text>
+<rect x="202" y="226" width="71" height="52" rx="5" fill="#3972ed"><title>open the middle drawer of the cabinet: 9/10</title></rect>
+<text x="237.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="277" y="226" width="71" height="52" rx="5" fill="#2563eb"><title>put the bowl on the stove: 10/10</title></rect>
+<text x="312.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="352" y="226" width="71" height="52" rx="5" fill="#3972ed"><title>put the wine bottle on top of the cabinet: 9/10</title></rect>
+<text x="387.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="427" y="226" width="71" height="52" rx="5" fill="#4d80ef"><title>open the top drawer and put the bowl inside: 8/10</title></rect>
+<text x="462.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">8/10</text>
+<rect x="502" y="226" width="71" height="52" rx="5" fill="#2563eb"><title>put the bowl on top of the cabinet: 10/10</title></rect>
+<text x="537.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="577" y="226" width="71" height="52" rx="5" fill="#2563eb"><title>push the plate to the front of the stove: 10/10</title></rect>
+<text x="612.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="652" y="226" width="71" height="52" rx="5" fill="#2563eb"><title>put the cream cheese in the bowl: 10/10</title></rect>
+<text x="687.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="727" y="226" width="71" height="52" rx="5" fill="#2563eb"><title>turn on the stove: 10/10</title></rect>
+<text x="762.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="802" y="226" width="71" height="52" rx="5" fill="#2563eb"><title>put the bowl on the plate: 10/10</title></rect>
+<text x="837.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="877" y="226" width="71" height="52" rx="5" fill="#4d80ef"><title>put the wine bottle on the rack: 8/10</title></rect>
+<text x="912.5" y="259" class="" text-anchor="middle" style="fill:white;font-weight:700">8/10</text>
+<text x="180" y="315" class="" text-anchor="end" >Long horizon</text>
+<rect x="202" y="282" width="71" height="52" rx="5" fill="#3972ed"><title>put both the alphabet soup and the tomato sauce in the basket: 9/10</title></rect>
+<text x="237.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="277" y="282" width="71" height="52" rx="5" fill="#3972ed"><title>put both the cream cheese box and the butter in the basket: 9/10</title></rect>
+<text x="312.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="352" y="282" width="71" height="52" rx="5" fill="#3972ed"><title>turn on the stove and put the moka pot on it: 9/10</title></rect>
+<text x="387.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="427" y="282" width="71" height="52" rx="5" fill="#2563eb"><title>put the black bowl in the bottom drawer of the cabinet and close it: 10/10</title></rect>
+<text x="462.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="502" y="282" width="71" height="52" rx="5" fill="#4d80ef"><title>put the white mug on the left plate and put the yellow and white mug on the right plate: 8/10</title></rect>
+<text x="537.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">8/10</text>
+<rect x="577" y="282" width="71" height="52" rx="5" fill="#4d80ef"><title>pick up the book and place it in the back compartment of the caddy: 8/10</title></rect>
+<text x="612.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">8/10</text>
+<rect x="652" y="282" width="71" height="52" rx="5" fill="#3972ed"><title>put the white mug on the plate and put the chocolate pudding to the right of the plate: 9/10</title></rect>
+<text x="687.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">9/10</text>
+<rect x="727" y="282" width="71" height="52" rx="5" fill="#2563eb"><title>put both the alphabet soup and the cream cheese box in the basket: 10/10</title></rect>
+<text x="762.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">10/10</text>
+<rect x="802" y="282" width="71" height="52" rx="5" fill="#b2caf9"><title>put both moka pots on the stove: 3/10</title></rect>
+<text x="837.5" y="315" class="" text-anchor="middle" style="fill:#17324d;font-weight:700">3/10</text>
+<rect x="877" y="282" width="71" height="52" rx="5" fill="#769ef3"><title>put the yellow and white mug in the microwave and close it: 6/10</title></rect>
+<text x="912.5" y="315" class="" text-anchor="middle" style="fill:white;font-weight:700">6/10</text>
+<text x="32" y="384" class="muted" text-anchor="start" >The long-horizon suite has the largest remaining gap: task 8 = 3/10; task 9 = 6/10.</text>
+<text x="32" y="408" class="muted" text-anchor="start" >These are fixed-task stage-evaluation results for one checkpoint and one seed, not a full training reproduction.</text>
+</svg>

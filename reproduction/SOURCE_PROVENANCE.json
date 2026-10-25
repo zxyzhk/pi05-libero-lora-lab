@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "source_pins": {
+    "openpi": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "community": "dcd97dcf4ac5b14f829b2085adea6ba8fdc2cf09",
+    "libero": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+    "lerobot": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+    "dataset_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f"
+  },
+  "original_executed_files": [
+    {
+      "file_name": "register_config.py",
+      "sha256": "b456c9716950c392c9694cf93e66a48c671dfc71f65e57800b7a282ec0af4513"
+    },
+    {
+      "file_name": "stage400_evaluation.py",
+      "sha256": "dfe28648e7372eb1b7abeecab2f89dec726f42edc2f101b858b87ae6fa3ba456"
+    },
+    {
+      "file_name": "run_full_evaluation.py",
+      "sha256": "d7f358f470d9c9335273748e80396681b97ea4c2173e9a397c5dec3871b4c65d"
+    }
+  ],
+  "public_exports": [
+    {
+      "file": "register_community_config.py",
+      "sha256": "464ea9b672bece3894c185bf697c07e91352fa8174c7d631b2d5586c418e7768"
+    },
+    {
+      "file": "audit_suite.py",
+      "sha256": "2279830a7a1009d85172c3890b0e335a1f33b6ffe9f88b7c362fb8db6b45c792"
+    }
+  ],
+  "changes": {
+    "register_community_config.py": [
+      "Replace hard-coded deployment root with --project-root pointing to an openpi checkout.",
+      "Retain the executed configuration BLOCK byte-for-byte; expected config.py SHA remains 4d728a07ee680efc208fc8083b3032a27de7c4c8ef26b8613111757be13217b1.",
+      "Require pinned input source SHA, add dry-run/--apply, deterministic idempotence and Python version check.",
+      "Remove machine-specific receipt output and operational paths."
+    ],
+    "audit_suite.py": [
+      "Extract the executed suite validation, score/Wilson and file-hash helpers; remove controller/server/training/process code.",
+      "Replace helper-module references with local standard-library functions and avoid the extracted score variable/function name collision.",
+      "Accept relocation of the parent directory while retaining the attempt directory name and episodes.jsonl logical identity.",
+      "Add standalone CLI and optional exclusive-create audit JSON output; do not include raw log contents."
+    ]
+  },
+  "upstream_configuration": {
+    "original_sha256": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d",
+    "executed_patched_sha256": "4d728a07ee680efc208fc8083b3032a27de7c4c8ef26b8613111757be13217b1"
+  },
+  "validation": {
+    "public_package_gpu_rerun": false,
+    "python_compilation": "passed",
+    "portable_config_pinned_source_dry_run_apply_idempotence": "passed on a temporary copy; no model imports",
+    "portable_config_cpu_python": "3.12.14",
+    "portable_audit_recorded_suites": "passed on the four recorded local attempt directories; no simulation or model imports",
+    "portable_audit_successes": [
+      98,
+      98,
+      94,
+      81
+    ],
+    "portable_audit_total_episodes": 400,
+    "video_validation_scope": "file count, nonempty content and SHA; not media decoding"
+  },
+  "recorded_run_cpu_optimizer_proof_sha256": "5f578f0cf375563a617960297c65fb54c9ae8bf0a54b58259a8ad6c72f4c28d9",
+  "distribution_scope": "No training data, weights, raw terminal logs, machine credentials or infrastructure-control tools."
+}

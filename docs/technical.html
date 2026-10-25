@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>π₀.₅｜完整评测与实验材料</title>
+  <meta name="description" content="π0.5 LoRA在LIBERO四套件40个任务上的400回合测评，371次成功。浏览任务明细、训练曲线与全部真实仿真视频。">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="technical.css">
+  <script src="technical.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header"><div class="container nav-row"><a class="brand" href="index.html"><span class="brand-symbol" aria-hidden="true">π</span> π₀.₅ <span class="brand-separator">/</span> Robotics</a><nav aria-label="评测导航"><a href="#tasks">任务明细</a><a href="#timing">运行记录</a><a href="#gallery">400段视频</a></nav><a class="nav-code" href="index.html">项目首页 ↗</a></div></header>
+  <main id="main">
+    <section class="container technical-hero">
+      <p class="eyebrow">EXPERIMENT EXPLORER</p><h1>40 个任务，<span>400 次闭环。</span></h1>
+      <p class="hero-description">从整体成绩，到每个语言任务、每段真实录像。<br>同一份检查点，完整保留本轮评测记录。</p>
+      <div class="headline-metrics technical-metrics"><div><span class="metric-label">总体成功率</span><p><strong>92.75%</strong><span>371 / 400 次任务成功</span></p></div><div><span class="metric-label">语言条件操作任务</span><p><strong>40</strong><span>4 套件 · 每任务 10 回合</span></p></div><div><span class="metric-label">回合与视频完整覆盖</span><p><strong>400</strong><span>0 运行错误 · 逐回合可追溯</span></p></div></div>
+      <div class="hero-links"><a class="button primary" href="#gallery">浏览真实仿真</a><a class="button secondary" href="assets/episodes.json" download>下载逐回合数据</a><a class="button text-button" href="https://github.com/zxyzhk/pi05-libero-lora-lab/blob/main/EXPERIMENT_REPORT.md" target="_blank" rel="noreferrer">实验报告 ↗</a></div>
+      <p id="data-message" class="data-message" role="status" hidden></p>
+    </section>
+
+    <section class="result-section technical-results"><div class="container chart-pair"><figure class="figure-card"><div class="figure-title"><h2>四套件成功率</h2><a href="assets/charts/suite-success.svg" download>下载 SVG ↓</a></div><img src="assets/charts/suite-success.svg" alt="Spatial与Object均98%，Goal94%，LIBERO-10为81%。" loading="lazy"><figcaption>各套件 10 个任务 × 10 回合；总计 371 / 400 次成功。</figcaption></figure><figure class="figure-card"><div class="figure-title"><h2>40 任务结果分布</h2><a href="assets/charts/task-heatmap.svg" download>下载 SVG ↓</a></div><img src="assets/charts/task-heatmap.svg" alt="四个套件各十个任务的成功率热力图。" loading="lazy"><figcaption>每个单元格对应一个语言任务，下方可查看指令与成功次数。</figcaption></figure></div></section>
+
+    <section class="container section" id="tasks"><div class="section-heading compact-heading"><div><p class="eyebrow">TASK-LEVEL RESULTS</p><h2>逐任务，查看语言与结果。</h2></div><label class="filter-label" for="task-suite">套件<select id="task-suite"><option value="all">全部 40 个任务</option><option value="libero_spatial">空间 / Spatial</option><option value="libero_object">物体 / Object</option><option value="libero_goal">目标 / Goal</option><option value="libero_10">长程 / LIBERO-10</option></select></label></div>
+      <div class="data-table-wrap"><table class="data-table"><caption class="sr-only">各任务的成功次数、成功率与95% Wilson区间</caption><thead><tr><th>套件 / 任务</th><th>语言指令</th><th>成功次数</th><th>成功率</th><th>95% 区间</th><th>回看</th></tr></thead><tbody id="task-rows"></tbody></table></div><div class="table-footer"><span id="task-count">40 个任务 · 400 回合</span><a class="text-link" href="assets/tasks.json" download>下载任务数据 ↓</a></div><p class="small-note">区间为固定任务与初值下的近似 Wilson 95% 区间；每任务 10 回合，不衡量多训练种子差异。</p>
+    </section>
+
+    <section class="container section" id="timing"><div class="section-heading"><p class="eyebrow">TRAINING & EVALUATION</p><h2>训练到动作，留下完整记录。</h2></div><div class="chart-pair training-time-grid"><figure class="figure-card"><div class="figure-title"><h3>9,000 次更新的训练轨迹</h3><a href="assets/charts/training-loss.svg" download>下载 SVG ↓</a></div><img src="assets/charts/training-loss.svg" alt="90个真实日志采样点的训练损失曲线，完成2501次更新后恢复。" loading="lazy"><figcaption>日志横轴为实际完成更新次数，最后日志采样在 8,901 次更新；最终检查点已确认完成 9,000 次更新。</figcaption></figure><div class="figure-card time-card"><p class="mini-label">COMPLETE EVALUATION WALL CLOCK</p><strong class="time-total" id="evaluation-total">45m 15.86s</strong><p>四套件评测全过程，包含校验、模型加载、仿真、录像与进程清理。</p><div class="interval-stats"><div><span>回合完成间隔 · mean</span><strong id="interval-mean">6.61 s</strong></div><div><span>P50</span><strong id="interval-p50">5.02 s</strong></div><div><span>P95</span><strong id="interval-p95">15.06 s</strong></div></div><div id="suite-time-bars" class="suite-time-bars" aria-label="四套件评测墙钟耗时"></div><p class="small-note">完成间隔来自约 1 秒轮询的 JSONL 记录，包含策略请求、环境和写视频；不是纯模型前向延迟。</p></div></div>
+      <figure class="figure-card histogram-card"><div class="figure-title"><h3>400 回合的完成间隔分布</h3><span class="mini-label">OBSERVED INTERVAL / SECONDS</span></div><svg id="timing-histogram" viewBox="0 0 920 240" role="img" aria-label="400个回合完成观察间隔的分布图"></svg><figcaption>每个区间显示观察样本数。首条记录包含启动，视频的 10 fps 回放长度与这些墙钟统计分别记录。</figcaption></figure>
+    </section>
+
+    <section class="container section" id="gallery"><div class="section-heading"><p class="eyebrow">EVERY EPISODE, REPLAYABLE</p><h2>每一回合，都可以回看。</h2><p>全部 400 段原始仿真视频，按任务和结果检索。</p></div><div class="gallery-filters"><label class="filter-label" for="gallery-suite">套件<select id="gallery-suite"><option value="all">全部套件</option><option value="libero_spatial">空间 / Spatial</option><option value="libero_object">物体 / Object</option><option value="libero_goal">目标 / Goal</option><option value="libero_10">长程 / LIBERO-10</option></select></label><label class="filter-label" for="gallery-task">任务<select id="gallery-task"><option value="all">全部任务</option></select></label><label class="filter-label" for="gallery-outcome">结果<select id="gallery-outcome"><option value="all">全部结果</option><option value="success">成功</option><option value="failure">未完成</option></select></label><span class="gallery-count" id="gallery-count">400 个回合</span></div><div class="episode-grid" id="episode-grid"></div><div class="pagination"><button class="button secondary" id="page-prev" type="button">← 上一页</button><span id="page-label">1 / 34</span><button class="button secondary" id="page-next" type="button">下一页 →</button></div><p class="small-note">视频为真实仿真录像。回放帧率 10 fps，播放时长不代表模型推理耗时。</p></section>
+
+    <section class="container evidence-section"><div class="evidence-links"><a href="assets/summary.json" download>实验汇总 JSON ↗</a><a href="assets/episodes.json" download>400 回合结果 ↗</a><a href="assets/training.json" download>原始训练采样点 ↗</a><a href="https://github.com/zxyzhk/pi05-libero-lora-lab" target="_blank" rel="noreferrer">GitHub 仓库 ↗</a></div><details class="protocol-details"><summary>训练与评测协议</summary><div><p>π₀.₅ 社区 LoRA 配方，完整 LIBERO 训练数据，batch 64，训练 seed 42，实际 9,000 次更新。视觉语言骨干 LoRA rank 16，动作专家 rank 32，并训练配方指定的视觉组件。检查点目录 8999 是训练循环索引，优化器及学习率计数均已回读确认 9,000。</p><p>LIBERO-Spatial / Object / Goal / LIBERO-10 各 10 任务，每任务前 10 个初始状态，环境 seed 7；224×224 图像、10 步 flow 积分、10×7 动作块、每执行 5 步重新规划，回合开始等待 10 步，每套件重启官方策略并使用策略 seed 0。</p><p>总体近似 Wilson 95% 区间 89.78%–94.90%。此为单训练种子的 400 回合阶段结果，未进行真机和 OOD 测试；训练在 2,501 次更新后恢复，采样器重新从 seed 42 开始。</p></div></details></section>
+  </main><footer class="container footer"><span>π₀.₅ · Language-conditioned Robot Manipulation</span><span>完整记录 · 真实仿真 · 2026</span><a href="index.html">返回项目首页 ↗</a></footer>
+</body>
+</html>

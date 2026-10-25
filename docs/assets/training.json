@@ -1,0 +1,728 @@
+{
+  "points": [
+    {
+      "updates": 1,
+      "log_step": 0,
+      "loss": 0.0939,
+      "grad_norm": 0.3626,
+      "param_norm": 1803.863,
+      "phase": "initial"
+    },
+    {
+      "updates": 101,
+      "log_step": 100,
+      "loss": 0.0704,
+      "grad_norm": 0.2315,
+      "param_norm": 1803.863,
+      "phase": "initial"
+    },
+    {
+      "updates": 201,
+      "log_step": 200,
+      "loss": 0.0499,
+      "grad_norm": 0.1618,
+      "param_norm": 1803.8639,
+      "phase": "initial"
+    },
+    {
+      "updates": 301,
+      "log_step": 300,
+      "loss": 0.0407,
+      "grad_norm": 0.1464,
+      "param_norm": 1803.8661,
+      "phase": "initial"
+    },
+    {
+      "updates": 401,
+      "log_step": 400,
+      "loss": 0.0359,
+      "grad_norm": 0.1472,
+      "param_norm": 1803.87,
+      "phase": "initial"
+    },
+    {
+      "updates": 501,
+      "log_step": 500,
+      "loss": 0.0333,
+      "grad_norm": 0.1196,
+      "param_norm": 1803.8746,
+      "phase": "initial"
+    },
+    {
+      "updates": 601,
+      "log_step": 600,
+      "loss": 0.0317,
+      "grad_norm": 0.1071,
+      "param_norm": 1803.8818,
+      "phase": "initial"
+    },
+    {
+      "updates": 701,
+      "log_step": 700,
+      "loss": 0.0308,
+      "grad_norm": 0.0955,
+      "param_norm": 1803.8918,
+      "phase": "initial"
+    },
+    {
+      "updates": 801,
+      "log_step": 800,
+      "loss": 0.0301,
+      "grad_norm": 0.0915,
+      "param_norm": 1803.9054,
+      "phase": "initial"
+    },
+    {
+      "updates": 901,
+      "log_step": 900,
+      "loss": 0.0289,
+      "grad_norm": 0.0895,
+      "param_norm": 1803.9216,
+      "phase": "initial"
+    },
+    {
+      "updates": 1001,
+      "log_step": 1000,
+      "loss": 0.0282,
+      "grad_norm": 0.0785,
+      "param_norm": 1803.9415,
+      "phase": "initial"
+    },
+    {
+      "updates": 1101,
+      "log_step": 1100,
+      "loss": 0.0285,
+      "grad_norm": 0.0743,
+      "param_norm": 1803.9644,
+      "phase": "initial"
+    },
+    {
+      "updates": 1201,
+      "log_step": 1200,
+      "loss": 0.0272,
+      "grad_norm": 0.0693,
+      "param_norm": 1803.9894,
+      "phase": "initial"
+    },
+    {
+      "updates": 1301,
+      "log_step": 1300,
+      "loss": 0.0267,
+      "grad_norm": 0.0663,
+      "param_norm": 1804.0142,
+      "phase": "initial"
+    },
+    {
+      "updates": 1401,
+      "log_step": 1400,
+      "loss": 0.0268,
+      "grad_norm": 0.066,
+      "param_norm": 1804.0382,
+      "phase": "initial"
+    },
+    {
+      "updates": 1501,
+      "log_step": 1500,
+      "loss": 0.0261,
+      "grad_norm": 0.0642,
+      "param_norm": 1804.0625,
+      "phase": "initial"
+    },
+    {
+      "updates": 1601,
+      "log_step": 1600,
+      "loss": 0.0257,
+      "grad_norm": 0.0618,
+      "param_norm": 1804.0872,
+      "phase": "initial"
+    },
+    {
+      "updates": 1701,
+      "log_step": 1700,
+      "loss": 0.0256,
+      "grad_norm": 0.0616,
+      "param_norm": 1804.1117,
+      "phase": "initial"
+    },
+    {
+      "updates": 1801,
+      "log_step": 1800,
+      "loss": 0.0255,
+      "grad_norm": 0.0601,
+      "param_norm": 1804.1365,
+      "phase": "initial"
+    },
+    {
+      "updates": 1901,
+      "log_step": 1900,
+      "loss": 0.0256,
+      "grad_norm": 0.0635,
+      "param_norm": 1804.1613,
+      "phase": "initial"
+    },
+    {
+      "updates": 2001,
+      "log_step": 2000,
+      "loss": 0.0252,
+      "grad_norm": 0.0612,
+      "param_norm": 1804.1858,
+      "phase": "initial"
+    },
+    {
+      "updates": 2101,
+      "log_step": 2100,
+      "loss": 0.0246,
+      "grad_norm": 0.0581,
+      "param_norm": 1804.2103,
+      "phase": "initial"
+    },
+    {
+      "updates": 2201,
+      "log_step": 2200,
+      "loss": 0.0243,
+      "grad_norm": 0.0631,
+      "param_norm": 1804.2352,
+      "phase": "initial"
+    },
+    {
+      "updates": 2301,
+      "log_step": 2300,
+      "loss": 0.0237,
+      "grad_norm": 0.0578,
+      "param_norm": 1804.26,
+      "phase": "initial"
+    },
+    {
+      "updates": 2401,
+      "log_step": 2400,
+      "loss": 0.0242,
+      "grad_norm": 0.0601,
+      "param_norm": 1804.2849,
+      "phase": "initial"
+    },
+    {
+      "updates": 2501,
+      "log_step": 2500,
+      "loss": 0.0237,
+      "grad_norm": 0.0578,
+      "param_norm": 1804.3087,
+      "phase": "initial"
+    },
+    {
+      "updates": 2601,
+      "log_step": 2600,
+      "loss": 0.0242,
+      "grad_norm": 0.0562,
+      "param_norm": 1804.3334,
+      "phase": "resumed"
+    },
+    {
+      "updates": 2701,
+      "log_step": 2700,
+      "loss": 0.0236,
+      "grad_norm": 0.0585,
+      "param_norm": 1804.3577,
+      "phase": "resumed"
+    },
+    {
+      "updates": 2801,
+      "log_step": 2800,
+      "loss": 0.0236,
+      "grad_norm": 0.0576,
+      "param_norm": 1804.3815,
+      "phase": "resumed"
+    },
+    {
+      "updates": 2901,
+      "log_step": 2900,
+      "loss": 0.0238,
+      "grad_norm": 0.0585,
+      "param_norm": 1804.4059,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3001,
+      "log_step": 3000,
+      "loss": 0.0233,
+      "grad_norm": 0.0563,
+      "param_norm": 1804.4297,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3101,
+      "log_step": 3100,
+      "loss": 0.0228,
+      "grad_norm": 0.0543,
+      "param_norm": 1804.4531,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3201,
+      "log_step": 3200,
+      "loss": 0.0231,
+      "grad_norm": 0.056,
+      "param_norm": 1804.4777,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3301,
+      "log_step": 3300,
+      "loss": 0.0223,
+      "grad_norm": 0.0553,
+      "param_norm": 1804.5018,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3401,
+      "log_step": 3400,
+      "loss": 0.0226,
+      "grad_norm": 0.0555,
+      "param_norm": 1804.5262,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3501,
+      "log_step": 3500,
+      "loss": 0.0228,
+      "grad_norm": 0.0583,
+      "param_norm": 1804.5509,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3601,
+      "log_step": 3600,
+      "loss": 0.0228,
+      "grad_norm": 0.0563,
+      "param_norm": 1804.5753,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3701,
+      "log_step": 3700,
+      "loss": 0.0223,
+      "grad_norm": 0.0574,
+      "param_norm": 1804.5995,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3801,
+      "log_step": 3800,
+      "loss": 0.0221,
+      "grad_norm": 0.0564,
+      "param_norm": 1804.6244,
+      "phase": "resumed"
+    },
+    {
+      "updates": 3901,
+      "log_step": 3900,
+      "loss": 0.0216,
+      "grad_norm": 0.0581,
+      "param_norm": 1804.6471,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4001,
+      "log_step": 4000,
+      "loss": 0.0215,
+      "grad_norm": 0.0557,
+      "param_norm": 1804.6715,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4101,
+      "log_step": 4100,
+      "loss": 0.0211,
+      "grad_norm": 0.0551,
+      "param_norm": 1804.6959,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4201,
+      "log_step": 4200,
+      "loss": 0.0213,
+      "grad_norm": 0.0557,
+      "param_norm": 1804.72,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4301,
+      "log_step": 4300,
+      "loss": 0.0215,
+      "grad_norm": 0.0558,
+      "param_norm": 1804.744,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4401,
+      "log_step": 4400,
+      "loss": 0.0216,
+      "grad_norm": 0.0598,
+      "param_norm": 1804.7681,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4501,
+      "log_step": 4500,
+      "loss": 0.0211,
+      "grad_norm": 0.0561,
+      "param_norm": 1804.7913,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4601,
+      "log_step": 4600,
+      "loss": 0.0209,
+      "grad_norm": 0.0575,
+      "param_norm": 1804.8156,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4701,
+      "log_step": 4700,
+      "loss": 0.0209,
+      "grad_norm": 0.0564,
+      "param_norm": 1804.8396,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4801,
+      "log_step": 4800,
+      "loss": 0.0202,
+      "grad_norm": 0.0556,
+      "param_norm": 1804.863,
+      "phase": "resumed"
+    },
+    {
+      "updates": 4901,
+      "log_step": 4900,
+      "loss": 0.0205,
+      "grad_norm": 0.0564,
+      "param_norm": 1804.8868,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5001,
+      "log_step": 5000,
+      "loss": 0.0212,
+      "grad_norm": 0.0575,
+      "param_norm": 1804.9097,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5101,
+      "log_step": 5100,
+      "loss": 0.0208,
+      "grad_norm": 0.058,
+      "param_norm": 1804.9331,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5201,
+      "log_step": 5200,
+      "loss": 0.0211,
+      "grad_norm": 0.0571,
+      "param_norm": 1804.9554,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5301,
+      "log_step": 5300,
+      "loss": 0.0205,
+      "grad_norm": 0.0562,
+      "param_norm": 1804.9772,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5401,
+      "log_step": 5400,
+      "loss": 0.0212,
+      "grad_norm": 0.0579,
+      "param_norm": 1805.0001,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5501,
+      "log_step": 5500,
+      "loss": 0.0209,
+      "grad_norm": 0.0584,
+      "param_norm": 1805.0229,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5601,
+      "log_step": 5600,
+      "loss": 0.0206,
+      "grad_norm": 0.0603,
+      "param_norm": 1805.0459,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5701,
+      "log_step": 5700,
+      "loss": 0.0204,
+      "grad_norm": 0.058,
+      "param_norm": 1805.0686,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5801,
+      "log_step": 5800,
+      "loss": 0.0205,
+      "grad_norm": 0.0603,
+      "param_norm": 1805.0906,
+      "phase": "resumed"
+    },
+    {
+      "updates": 5901,
+      "log_step": 5900,
+      "loss": 0.0206,
+      "grad_norm": 0.0597,
+      "param_norm": 1805.113,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6001,
+      "log_step": 6000,
+      "loss": 0.0198,
+      "grad_norm": 0.0572,
+      "param_norm": 1805.1359,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6101,
+      "log_step": 6100,
+      "loss": 0.0201,
+      "grad_norm": 0.0581,
+      "param_norm": 1805.158,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6201,
+      "log_step": 6200,
+      "loss": 0.0201,
+      "grad_norm": 0.0572,
+      "param_norm": 1805.1797,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6301,
+      "log_step": 6300,
+      "loss": 0.0198,
+      "grad_norm": 0.0584,
+      "param_norm": 1805.2021,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6401,
+      "log_step": 6400,
+      "loss": 0.0198,
+      "grad_norm": 0.0592,
+      "param_norm": 1805.2244,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6501,
+      "log_step": 6500,
+      "loss": 0.0195,
+      "grad_norm": 0.0572,
+      "param_norm": 1805.2456,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6601,
+      "log_step": 6600,
+      "loss": 0.0194,
+      "grad_norm": 0.0603,
+      "param_norm": 1805.2662,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6701,
+      "log_step": 6700,
+      "loss": 0.0198,
+      "grad_norm": 0.0593,
+      "param_norm": 1805.2877,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6801,
+      "log_step": 6800,
+      "loss": 0.0195,
+      "grad_norm": 0.0592,
+      "param_norm": 1805.3097,
+      "phase": "resumed"
+    },
+    {
+      "updates": 6901,
+      "log_step": 6900,
+      "loss": 0.0185,
+      "grad_norm": 0.0579,
+      "param_norm": 1805.3315,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7001,
+      "log_step": 7000,
+      "loss": 0.0187,
+      "grad_norm": 0.0588,
+      "param_norm": 1805.353,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7101,
+      "log_step": 7100,
+      "loss": 0.0185,
+      "grad_norm": 0.0604,
+      "param_norm": 1805.3745,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7201,
+      "log_step": 7200,
+      "loss": 0.0189,
+      "grad_norm": 0.0612,
+      "param_norm": 1805.3953,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7301,
+      "log_step": 7300,
+      "loss": 0.0184,
+      "grad_norm": 0.0605,
+      "param_norm": 1805.4165,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7401,
+      "log_step": 7400,
+      "loss": 0.0185,
+      "grad_norm": 0.0641,
+      "param_norm": 1805.4371,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7501,
+      "log_step": 7500,
+      "loss": 0.0185,
+      "grad_norm": 0.0608,
+      "param_norm": 1805.4575,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7601,
+      "log_step": 7600,
+      "loss": 0.0183,
+      "grad_norm": 0.0596,
+      "param_norm": 1805.4783,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7701,
+      "log_step": 7700,
+      "loss": 0.0184,
+      "grad_norm": 0.0592,
+      "param_norm": 1805.4983,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7801,
+      "log_step": 7800,
+      "loss": 0.0179,
+      "grad_norm": 0.0601,
+      "param_norm": 1805.5187,
+      "phase": "resumed"
+    },
+    {
+      "updates": 7901,
+      "log_step": 7900,
+      "loss": 0.0182,
+      "grad_norm": 0.0607,
+      "param_norm": 1805.5387,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8001,
+      "log_step": 8000,
+      "loss": 0.0177,
+      "grad_norm": 0.0592,
+      "param_norm": 1805.5583,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8101,
+      "log_step": 8100,
+      "loss": 0.0183,
+      "grad_norm": 0.0621,
+      "param_norm": 1805.5776,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8201,
+      "log_step": 8200,
+      "loss": 0.0176,
+      "grad_norm": 0.0595,
+      "param_norm": 1805.5978,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8301,
+      "log_step": 8300,
+      "loss": 0.0181,
+      "grad_norm": 0.0601,
+      "param_norm": 1805.6169,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8401,
+      "log_step": 8400,
+      "loss": 0.0177,
+      "grad_norm": 0.0605,
+      "param_norm": 1805.6359,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8501,
+      "log_step": 8500,
+      "loss": 0.018,
+      "grad_norm": 0.0617,
+      "param_norm": 1805.6549,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8601,
+      "log_step": 8600,
+      "loss": 0.018,
+      "grad_norm": 0.0603,
+      "param_norm": 1805.6737,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8701,
+      "log_step": 8700,
+      "loss": 0.0176,
+      "grad_norm": 0.0613,
+      "param_norm": 1805.6921,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8801,
+      "log_step": 8800,
+      "loss": 0.0174,
+      "grad_norm": 0.0607,
+      "param_norm": 1805.7114,
+      "phase": "resumed"
+    },
+    {
+      "updates": 8901,
+      "log_step": 8900,
+      "loss": 0.0175,
+      "grad_norm": 0.0612,
+      "param_norm": 1805.73,
+      "phase": "resumed"
+    }
+  ],
+  "resume_after_updates": 2501,
+  "last_logged_updates": 8901,
+  "final_checkpoint_updates": 9000,
+  "note": "Actual completed updates=logged Step+1; no invented9000-update loss point"
+}

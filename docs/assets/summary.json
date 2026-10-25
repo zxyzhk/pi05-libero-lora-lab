@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "scope": "9000-update stage evaluation; not full30000-update reproduction",
+  "aggregate": {
+    "episodes": 400,
+    "tasks": 40,
+    "successes": 371,
+    "failures": 29,
+    "success_rate": 0.9275,
+    "success_percent": 92.75,
+    "wilson95": [
+      0.8978175067464532,
+      0.9490494815977232
+    ],
+    "ci_note": "Approximate 95% Wilson binomial intervals, conditional on this checkpoint, fixed benchmark tasks and initial states; episodes within a task may be dependent. These intervals do not estimate training-seed variance or OOD generalization."
+  },
+  "suites": [
+    {
+      "suite": "libero_spatial",
+      "episodes": 100,
+      "successes": 98,
+      "success_rate": 0.98,
+      "wilson95": [
+        0.929988209271456,
+        0.9944980324498376
+      ],
+      "evaluation_seconds": 536.7211435213685,
+      "wall_seconds": 552.6637339182198
+    },
+    {
+      "suite": "libero_object",
+      "episodes": 100,
+      "successes": 98,
+      "success_rate": 0.98,
+      "wilson95": [
+        0.929988209271456,
+        0.9944980324498376
+      ],
+      "evaluation_seconds": 575.2057846449316,
+      "wall_seconds": 591.1889904998243
+    },
+    {
+      "suite": "libero_goal",
+      "episodes": 100,
+      "successes": 94,
+      "success_rate": 0.94,
+      "wilson95": [
+        0.8752318455410406,
+        0.9722138760368118
+      ],
+      "evaluation_seconds": 504.9574472308159,
+      "wall_seconds": 521.0278368666768
+    },
+    {
+      "suite": "libero_10",
+      "episodes": 100,
+      "successes": 81,
+      "success_rate": 0.81,
+      "wilson95": [
+        0.7222115462093562,
+        0.8748524849023126
+      ],
+      "evaluation_seconds": 1028.3177749738097,
+      "wall_seconds": 1044.435429584235
+    }
+  ],
+  "protocol": {
+    "tasks_per_suite": 10,
+    "trials_per_task": 10,
+    "seed": 7,
+    "training_seed": 42,
+    "flow_steps": 10,
+    "replan_steps": 5,
+    "settling_steps": 10,
+    "action_horizon": 10,
+    "action_dimensions": 7,
+    "resize_size": 224,
+    "policy_prng_seed": 0,
+    "policy_restart": "fresh official Policy per suite",
+    "suite_limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    }
+  },
+  "training": {
+    "actual_updates": 9000,
+    "checkpoint_loop_index": 8999,
+    "batch_size": 64,
+    "seed": 42,
+    "lora_rank_vlm": 16,
+    "lora_rank_action_expert": 32,
+    "trainable_parameters": 466957072,
+    "total_parameters": 3403421456,
+    "recipe": "Community pi0.5 LoRA; vision encoder and some projections also trained",
+    "resume_after_updates": 2501,
+    "dataloader_position_restored": false,
+    "last_logged_updates": 8901,
+    "last_logged_loss": 0.0175,
+    "hardware": "1 x RTX PRO6000 Blackwell96GB"
+  },
+  "timing": {
+    "full_controller_wall_seconds": 2715.861630678177,
+    "evaluation_seconds": 2645.2021503709257,
+    "successful_suite_wall_seconds": 2709.315990868956,
+    "observed_episode_intervals": {
+      "records": 400,
+      "mean_seconds": 6.612963939094916,
+      "p50_seconds": 5.020296026021242,
+      "p95_seconds": 15.06255912706256,
+      "percentile_method": "R7 linear interpolation",
+      "note": "Episode timing observes durable JSONL completion at about 1s polling. Intervals include environment setup, simulation, policy requests and video encoding; first interval also includes evaluator startup. Batched observations have no individual duration. Pure model forward latency was not measured."
+    },
+    "timing_note": "Episode timing observes durable JSONL completion at about 1s polling. Intervals include environment setup, simulation, policy requests and video encoding; first interval also includes evaluator startup. Batched observations have no individual duration. Pure model forward latency was not measured.",
+    "pure_model_forward_latency_measured": false,
+    "pure_model_forward_latency_ms": null
+  },
+  "audit": {
+    "status": "passed",
+    "exported_files": 446,
+    "exported_bytes": 31925378,
+    "runtime_errors": 0,
+    "all400_video_sha_verified": true
+  },
+  "sources": [
+    {
+      "id": "independent-audit",
+      "sha256": "0324207fe17c181fdd345c2e1fa7dda9b096390180257f891b285ca024ad3f37",
+      "bytes": 706848
+    },
+    {
+      "id": "aggregate",
+      "sha256": "7b8c2a623c0c5a466942858d58345541efb250e107d0a5644b5b7f269a7f7f4c",
+      "bytes": 118063
+    },
+    {
+      "id": "binding",
+      "sha256": "8d97187449600c26aa77465f6c75fb48aecba8f2e99998ec9da53c2e7132c239",
+      "bytes": 134910
+    },
+    {
+      "id": "evaluation-terminal",
+      "sha256": "0430d8df4532e542042ea7ea389b97b895532c3fd4996d95df2edabb905ecf91",
+      "bytes": 26911
+    },
+    {
+      "id": "cpu-proof",
+      "sha256": "5f578f0cf375563a617960297c65fb54c9ae8bf0a54b58259a8ad6c72f4c28d9",
+      "bytes": 83447
+    },
+    {
+      "id": "initial-training",
+      "sha256": "95262da30ad5f7342b00b838e56af7f578a9a59de1862f46c737dbddc7e52af9",
+      "bytes": 146755
+    },
+    {
+      "id": "resumed-training",
+      "sha256": "a77b2cb2728d19bdcad5d4fb91c2e88a3c0b27ae898cf94d3a35e30bd0afff7d",
+      "bytes": 342118
+    }
+  ],
+  "limitations": [
+    "400 episodes are10 trials per40 fixed tasks at one training seed, not the community2000-episode or a multi-seed/OOD evaluation.",
+    "The original30000-update run was stopped at9000 updates by request.",
+    "Timing is observed episode-completion polling with setup, simulation, policy requests and video encoding; it is not pure model forward latency.",
+    "Training resumed after2501 updates without DataLoader position restoration; it is not bitwise-equivalent to uninterrupted training.",
+    "Showcase videos are explicitly successful excerpts chosen by a fixed rule. The full400-episode data and gallery retain all29 failures.",
+    "Source and media hashes establish exported file integrity; full model/optimizer arrays were not re-restored by this public report."
+  ]
+}
